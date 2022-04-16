@@ -19,7 +19,7 @@ public class Target : MonoBehaviour
     void Start()
     {
         health = maxHealth;
-        slider.value = CalculateHealth();
+        // slider.value = CalculateHealth();
         player = FindObjectOfType<PlayerMovement>();
     }
 
@@ -41,7 +41,7 @@ public class Target : MonoBehaviour
 
     void Update()
     {
-        slider.value = CalculateHealth();
+        // slider.value = CalculateHealth();
 
         if(health < maxHealth)
         {

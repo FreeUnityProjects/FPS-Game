@@ -192,8 +192,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Set HealthText and EnergyText
-        healthText.text = health.ToString();
-        energyText.text = energy.ToString("F0");
+        // healthText.text = health.ToString();
+        // energyText.text = energy.ToString("F0");
 
         //Regenerate Energy
         if(energy < 1000f)
@@ -207,7 +207,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Set Text to currency float
-        currencyText.text = currency.ToString();
+        // currencyText.text = currency.ToString();
 
         PlayerPrefs.SetFloat("currency", currency);
 
@@ -352,7 +352,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //Bomb Player Damage
         health -= chasingEnemy.damage;
-        StartCoroutine(cameraShake.Shake(.2f, .5f));
+        // StartCoroutine(cameraShake.Shake(.2f, .5f));
 
         knockBackForce = 20f;
         Knockback();

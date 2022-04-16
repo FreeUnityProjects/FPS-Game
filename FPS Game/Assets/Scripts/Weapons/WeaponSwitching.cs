@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class WeaponSwitching : MonoBehaviour
 {
     public int selectedWeapon = 0;
-    private AK47Script weaponScript;
+    private AK47WeaponsScript weaponScript;
 
     public Image WeaponIconBackground1;
     public Image WeaponIconBackground2;
@@ -20,7 +20,7 @@ public class WeaponSwitching : MonoBehaviour
 
     void Update()
     {
-        weaponScript = FindObjectOfType<AK47Script>();
+        weaponScript = FindObjectOfType<AK47WeaponsScript>();
 
         int previousSelectedWeapon = selectedWeapon;
 

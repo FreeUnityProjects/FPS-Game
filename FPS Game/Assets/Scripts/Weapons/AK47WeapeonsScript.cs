@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class AK47Script : MonoBehaviour
+public class AK47WeaponsScript : MonoBehaviour
 {
     public float damage = 10f;
     public float range = 100f;
